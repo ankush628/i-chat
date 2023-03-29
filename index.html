@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iChat</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+<!-- integrating socket io with html page,socket connection is established as someone opens the page-->
+  <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+<!-- linking javascript file -->
+  <script defer src="./js/client.js"></script>
+<!-- linking css -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <nav>
+    <img class="logo" src="./chat.png" alt="app logo">
+  </nav>
+  <h1>Welcome to iChat! Enjoy chatting with your buddies.</h1>
+  <div class="name-container"></div>
+  <div class="container"></div>
+  <div class="send">
+    <form action="#" id="send-form">
+      <input type="text" name="messageInp" id="messageInp" placeholder="Type a message here.." autocomplete="off">
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+  <footer>©iChat 2023</footer>
+</body>
+</html>

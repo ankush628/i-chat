@@ -1,0 +1,113 @@
+body{
+    background-image: linear-gradient(#C9EEFF,#62CDFF);
+}
+nav{
+    margin-top: 30px;
+}
+h1{
+    text-align: center;
+    color: #46B5D1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+.newUser{
+    max-width:1000px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 50px;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #146C94;
+}
+.container{
+    background-color:#97DEFF;
+    max-width:1000px;
+    margin: auto;
+    height: 55vh;
+    border: 2px solid #62CDFF;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow-y: auto;
+
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.message{
+    min-width: 25%;
+    max-width: 40%;
+    padding: 10px;
+    margin: 15px 10px 5px;
+    border: 2px solid #85CDFD;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+.time{
+    width: 60px;
+    border: 1px solid #85CDFD;
+    border-radius: 4px;
+    font-size: 13px;
+    font-style: italic;
+    margin: 0 10px 15px;
+    padding: 3px;
+}
+.right{
+    background-color: #C9EEFF;
+    float: right;
+    clear: both;
+}
+.left{
+    background-color: #F9F9F9;
+    float: left;
+    clear: both;
+}
+#send-form{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+#messageInp{
+    background-color: whitesmoke;
+    border: 2px solid #62CDFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 85%;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.btn{
+    background-color: whitesmoke;
+    border: 2px solid #62CDFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 11%;
+    color: #19A7CE;
+    cursor: pointer;
+    font-size: 16px;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #messageInp{
+        width: 70%;
+    }
+    .btn{
+        width: 20%;
+    }
+  }
