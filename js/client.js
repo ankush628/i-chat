@@ -1,5 +1,5 @@
 // socket instance -  interface used to sends events to — and receive events from — the server
-const socket = io('localhost:5000');
+const socket = io('https://ichat-8cxh.onrender.com');
 
 // getting data of form submission
 const form = document.getElementById('send-form');
